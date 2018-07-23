@@ -1,3 +1,4 @@
+# Create a rediscache backup that can be scheduled
 param (
         [Parameter(Mandatory=$true)]
         [string]
