@@ -14,7 +14,7 @@ param (
 
         [Parameter(Mandatory=$true)]
         [string]
-        $storageContainer,
+        $storageContainer
     )
 
 $context = New-AzureStorageContext -Debug -Verbose -StorageAccountName $storageAccount -StorageAccountKey $storageAccessKey
