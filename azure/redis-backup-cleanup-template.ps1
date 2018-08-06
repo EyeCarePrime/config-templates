@@ -28,6 +28,6 @@ foreach($blob in $EGBlobs)
     if($blob.lastmodified -lt (get-date).AddDays($daysToKeep*-1))
     {
         echo "Deleting $blob.name"
-        Remove-AzureStorageBlob -Debug -Verbose -Blob $blob.name -Container $storageContainer -Context $context
+        Remove-AzureStorageBlob -Confirm:$false -Debug -Verbose -Blob $blob.name -Container $storageContainer -Context $context
     }
 }
