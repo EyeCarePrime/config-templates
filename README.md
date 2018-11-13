@@ -1,4 +1,4 @@
-### DEPRECATED
+# DEPRECATED
 
-# config-templates
+## config-templates
 Public configuration templates
